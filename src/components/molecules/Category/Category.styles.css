@@ -1,0 +1,24 @@
+.category-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensure items wrap to new lines */
+  padding: 24px 0px 16px 0px;
+}
+
+.category-wrapper > * {
+  margin: 8px; /* Add some space between buttons */
+}
+
+@media (max-width: 768px) {
+  .category-wrapper {
+    flex-direction: column;
+    padding: 16px 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-wrapper {
+    padding: 12px 0px;
+  }
+}
